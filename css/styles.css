@@ -1,0 +1,77 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+}
+ul {
+  list-style: none;
+}
+
+/* Нвігаціяя сайту*/
+.accent {
+  color: var(--accent-color);
+}
+.logo {
+  color: #000000;
+}
+
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Контакти */
+
+.contacts .link {
+  color: var(--secondary-text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+/* Герой */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+}
+
+/* Section */
+
+.section-title {
+  color: var(--primary-text-color);
+}
+
+/* Benefits */
+
+.benefits-title {
+  color: var(--primary-text-color);
+}
+
+.benefits-text {
+  color: var(--secondary-text-color);
+}
+
+/* Our team */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.workers-title {
+  color: var(--primary-text-color);
+}
+.workers-profession {
+  color: var(--secondary-text-color);
+}
