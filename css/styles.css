@@ -2,25 +2,43 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --tertiary-bg-colo: #2f303a;
+  --primary-black-color: #000000;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 
-/* Нвігаціяя сайту*/
+/* ---------------Нвігаціяя сайту---------------*/
 .accent {
   color: var(--accent-color);
 }
 .logo {
-  color: #000000;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--primary-black-color);
 }
 
 .site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
@@ -28,10 +46,16 @@ ul {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-
-/* Контакти */
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* ---------------Контакти ---------------*/
 
 .contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
 
@@ -39,39 +63,148 @@ ul {
 .contacts .link:focus {
   color: var(--accent-color);
 }
-/* Герой */
+/* ---------------Герой ---------------*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--tertiary-bg-colo);
 }
 .hero-title {
-  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
-/* Section */
+/* ---------------Section ---------------*/
 
 .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
-/* Benefits */
+/*--------------- Benefits--------------- */
 
 .benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--primary-text-color);
 }
 
 .benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-/* Our team */
+/*--------------- Our team ---------------*/
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bg-color);
+}
+
+.cards {
+  background-color: var(--primary-white-color);
 }
 
 .workers-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
 .workers-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/*--------------- Підвал ---------------*/
+
+.footer {
+  background-color: var(--tertiary-bg-colo);
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+.communication .addres {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+.communication .contacts {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.communication .contacts:hover,
+.communication .contacts:focus {
+  color: var(--accent-color);
+}
+/* ---------------ButtonS--------------- */
+.button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  border: 0;
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/*--------------- Портфоліо--------------- */
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+.projects-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
