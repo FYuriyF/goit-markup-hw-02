@@ -175,6 +175,7 @@ body {
   color: var(--primary-white-color);
 }
 .addres {
+  font-style: normal;
   text-decoration: none;
 }
 .communication .contacts {
@@ -185,6 +186,9 @@ body {
 .communication .contacts:hover,
 .communication .contacts:focus {
   color: var(--accent-color);
+}
+.contacts{
+  font-style: normal;
 }
 /* ---------------ButtonS--------------- */
 .button {
