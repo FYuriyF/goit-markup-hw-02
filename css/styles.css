@@ -11,32 +11,51 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
-ul {
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* ul {
   list-style: none;
-}
-a {
+} */
+/* a {
   text-decoration: none;
-}
+} */
 
 /* ---------------Нвігаціяя сайту---------------*/
+.site-nav {
+  list-style: none;
+}
+
 .accent {
   color: var(--accent-color);
 }
 .logo {
+  text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
   color: var(--primary-black-color);
+}
+.link {
+  text-decoration: none;
 }
 
 .site-nav .link {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -51,9 +70,12 @@ a {
 }
 /* ---------------Контакти ---------------*/
 
+.contacts {
+  list-style: none;
+}
+
 .contacts .link {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -84,31 +106,31 @@ a {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 /*--------------- Benefits--------------- */
-
+.benefits {
+  list-style: none;
+}
 .benefits-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
 
 .benefits-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-
+.list {
+  list-style: none;
+}
 /*--------------- Our team ---------------*/
-
+.workers {
+  list-style: none;
+}
 .team {
   background-color: var(--secondary-bg-color);
 }
@@ -127,41 +149,37 @@ a {
 }
 
 .workers-profession {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
 /*--------------- Підвал ---------------*/
-
+.communication {
+  list-style: none;
+}
 .footer {
   background-color: var(--tertiary-bg-colo);
 }
 .footer-logo {
+  text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
 .communication .addres {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
+.addres {
+  text-decoration: none;
+}
 .communication .contacts {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  text-decoration: none;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .communication .contacts:hover,
@@ -182,9 +200,23 @@ a {
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .button.secondary {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
 }
@@ -194,6 +226,14 @@ a {
   background-color: var(--accent-color);
 }
 /*--------------- Портфоліо--------------- */
+
+.projects {
+  list-style: none;
+}
+.btn {
+  list-style: none;
+}
+
 .projects-title {
   font-weight: 700;
   font-size: 18px;
@@ -202,9 +242,7 @@ a {
   color: var(--primary-text-color);
 }
 .projects-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
